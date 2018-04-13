@@ -1,0 +1,34 @@
+
+.App {
+}
+
+.board {
+  display: table;
+  margin: 50px auto;
+  background-color: lightgrey;
+}
+
+.cell {
+  float: left;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  margin: 2px;
+}
+
+.cell.snake {
+  background-color: green;
+}
+
+.cell.apple {
+  background-color: red;
+  border-radius: 15px;
+}
+
+.cell.inactive {
+  /*background-color: yellow;*/
+}
+
+.cell:nth-child(20n + 1) {
+  clear: left;
+}
